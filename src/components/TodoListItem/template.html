@@ -1,10 +1,31 @@
 <div class="todoListItem">
-    <input type="text" v-model.trim="edit" v-if="edit != null" class="edit" v-focus @keyup.enter="submitHandler"
-        @keyup.esc="cancelHandler" @blur="cancelHandler">
+    <label v-if="edit != null" class="edit list-group-item d-flex gap-3 bg-light">
+        <input class="form-check-input form-check-input-placeholder bg-light flex-shrink-0" disabled type="checkbox"
+            value="" style="font-size: 1.375em;">
+        <span class="form-checked-content">
+            <span contenteditable="true" class="w-100 input-group">
+                <input type="text" class="input-group" placeholder="請輸入代辦事項" v-focus @keyup.enter="submitHandler"
+                    @keyup.esc="cancelHandler" @blur="cancelHandler" v-model.trim="edit">
+            </span>
+            <small class="d-block text-muted">
+                <svg class="bi me-1" width="1em" height="1em">
+                    <use xlink:href="#list-check" />
+                </svg>
+            </small>
+        </span>
+    </label>
     <template v-else>
-        <input type="checkbox" class="toggle" v-model="complete">
-        <label @dblclick="editHandler">{{todo.content}}</label>
-        <button class="destroy" @click="destroyHandler"></button>
+        <label class="list-group-item d-flex gap-3">
+            <input class="form-check-input flex-shrink-0" type="checkbox" value="" v-model="complete"
+                style="font-size: 1.375em;">
+            <span class="form-checked-content">
+                <strong><label style="width: 330px;" @dblclick="editHandler">{{todo.content}}</label></strong>
+                <button class="btn btn-danger right" @click="destroyHandler">刪除</button>
+            </span>
+        </label>
     </template>
+
+
+
 
 </div>

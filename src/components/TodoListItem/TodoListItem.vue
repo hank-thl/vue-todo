@@ -57,3 +57,8 @@ export default {
 };
 </script>
 <template src="./template.html"></template>
+<style>
+.destroy {
+  height: 20px;
+}
+</style>
