@@ -1,9 +1,8 @@
 # vue-todo
 
-## Project setup
-```
-npm install
-```
+## Project link
+
+[Todolist](https://hank-thl.github.io/vue-todo/dist/index.html)
 
 ### Compiles and hot-reloads for development
 ```
