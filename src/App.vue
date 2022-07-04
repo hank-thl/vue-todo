@@ -64,4 +64,7 @@ export default {
 .todoInput {
   margin: 0 0 10px;
 }
+.form-checked-content {
+  width: 310px;
+}
 </style>

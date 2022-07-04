@@ -19,9 +19,9 @@
             <input class="form-check-input flex-shrink-0" type="checkbox" value="" v-model="complete"
                 style="font-size: 1.375em;">
             <span class="form-checked-content">
-                <strong><label style="width: 330px;" @dblclick="editHandler">{{todo.content}}</label></strong>
-                <button class="btn btn-danger right" @click="destroyHandler">刪除</button>
+                <strong><label @dblclick="editHandler">{{todo.content}}</label></strong>
             </span>
+            <button class="btn btn-danger" @click="destroyHandler">刪除</button>
         </label>
     </template>
 
