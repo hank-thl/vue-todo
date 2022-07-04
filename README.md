@@ -2,7 +2,7 @@
 
 ## Project link
 
-https://hank-thl.github.io/vue-todo/dist/index.html
+[Todolist](https://hank-thl.github.io/vue-todo/dist/index.html)
 
 ### Compiles and hot-reloads for development
 ```
