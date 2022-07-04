@@ -67,4 +67,7 @@ export default {
 .form-checked-content {
   width: 310px;
 }
+.form-checked-content label {
+  padding: 6px 0 0 0;
+}
 </style>
